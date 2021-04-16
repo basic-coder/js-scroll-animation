@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=54, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+</head>
+<body>
+<div class="intro">
+    <h1>Simple scroll effect using scroll-out.js</h1>
+</div>
+<div class="container">
+    <h1>Scroll</h1>
+    <div class="row">
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio inventore illo voluptatibus in doloribus voluptates a sit deserunt porro illum eius tempore, id pariatur voluptatum! Pariatur corrupti natus doloribus nihil!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, autem. Vitae cumque, soluta, quaerat amet iure distinctio voluptatibus veniam perferendis omnis eius asperiores! Voluptate facilis, molestiae laborum fugiat accusamus pariatur.
+            </p>
+        </div>
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio inventore illo voluptatibus in doloribus voluptates a sit deserunt porro illum eius tempore, id pariatur voluptatum! Pariatur corrupti natus doloribus nihil!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, autem. Vitae cumque, soluta, quaerat amet iure distinctio voluptatibus veniam perferendis omnis eius asperiores! Voluptate facilis, molestiae laborum fugiat accusamus pariatur.
+            </p>
+        </div>
+    </div>
+</div>
+<img src="https://cdn.pixabay.com/photo/2015/12/29/14/51/mountains-1112911_1280.jpg" alt="">
+<!--
+<script>
+window.addEventListener('scroll',()=>{
+    let content = document.querySelector('.row');
+    let contentPosition = content.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight/1.5;
+    if(contentPosition < screenPosition){
+        content.classList.add('active');
+    }else{
+        content.classList.remove('active');
+    }
+});-->
+<script>
+    ScrollOut({
+      targets: ".col",
+      offset: 400
+    });
+</script>
+</script>
+</body>
+</html>
